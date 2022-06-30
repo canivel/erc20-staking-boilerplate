@@ -1,0 +1,5 @@
+cc = await CloudCoin.deployed()
+cc.name()
+accounts = await web3.eth.getAccounts()
+amount = web3.utils.toWei('100', "ether")
+cc.transfer(accounts[1], amount)
